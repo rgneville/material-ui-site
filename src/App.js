@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Grid from './components/Grid';
 import Footer from './components/Footer';
 
+import Hero from './components/assets/hero.jpg';
 import BathtubIcon from '@material-ui/icons/Bathtub';
 import BuildIcon from '@material-ui/icons/Build';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
@@ -13,7 +14,7 @@ import ComputerIcon from '@material-ui/icons/Computer';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"#2e1667",
+      main:"#000000",
     },
     secondary: {
       main:"#c7d8ed",
@@ -53,6 +54,16 @@ const styles = makeStyles({
     alignItems: "center",
     flexWrap: "wrap", 
   },
+  hero:{
+    marginTop: "2.5rem",
+    width: "100%",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    filter: "grayscale(50%)",
+    objectFit: "cover",
+    objectPosition: "20% 10%"
+  },
 })
 
 function App() {
@@ -62,8 +73,9 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <NavBar />
+        <img src={Hero} alt="Some legs in a bath" className={classes.hero} />
         <div className={classes.wrapper}>
-          <Typography variant="h4" className={classes.bigSpace} color="primary">
+          <Typography variant="h4" className={classes.littleSpace} color="primary">
              Stylish and Bespoke Bathrooms
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">

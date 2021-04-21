@@ -53,12 +53,18 @@ const NavBar = () => {
                    </Link>
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Projects
+                    <Link href="/projects" color="inherit" style={{ textDecoration: "none" }}>
+                        Projects
+                   </Link>
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Contact Us 
+                    <Link href="/contact" color="inherit" style={{ textDecoration: "none" }}>
+                        Contact
+                   </Link> 
                 </Typography>
-                <CustomBtn txt="Get a quote today"/>
+                <Link href="/about" color="inherit">
+                    <CustomBtn txt="Get a quote today"/>
+                </Link>
             </Toolbar>
     )
 }

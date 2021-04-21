@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link'
 import CustomBtn from './CustomBtn';
 
 const styles = makeStyles({
@@ -23,7 +24,9 @@ const Grid = (props) => {
             <div className={classes.item}>{icon}</div>
             <Typography className={classes.item} variant="h5">{title}</Typography>
             <div className={classes.item}>
-                <CustomBtn  txt={btnTitle}/>
+            <Link href="/about" color="inherit">
+                <CustomBtn txt={btnTitle}/>
+            </Link>
             </div>
         </div>
     )
