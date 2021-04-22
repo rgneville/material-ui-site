@@ -24,7 +24,7 @@ const theme = createMuiTheme({
         },
       h5: {
         fontWeight: 100,
-        fontSize: "medium",
+        fontSize: "large",
         lineHeight: '2rem',
       },
     },

@@ -2,7 +2,7 @@ import React from 'react';
 import CustomBtn from './CustomBtn';
 import logo from '../ABlogo.svg';
 import { Toolbar, Typography } from '@material-ui/core';
-import Link from '@material-ui/core/Link'
+import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles({
@@ -48,6 +48,11 @@ const NavBar = () => {
                     </Typography>
                 </div>
                 <Typography variant="h6" className={classes.menuItem}>
+                   <Link href="/" color="inherit" style={{ textDecoration: "none" }}>
+                        Home
+                   </Link>
+                </Typography>
+                <Typography variant="h6" className={classes.menuItem}>
                    <Link href="/about" color="inherit" style={{ textDecoration: "none" }}>
                         About
                    </Link>
@@ -62,7 +67,7 @@ const NavBar = () => {
                         Contact
                    </Link> 
                 </Typography>
-                <Link href="/about" color="inherit">
+                <Link href="mailto:aquabathroomsdirectltd@gmail.com" color="inherit">
                     <CustomBtn txt="Get a quote today"/>
                 </Link>
             </Toolbar>

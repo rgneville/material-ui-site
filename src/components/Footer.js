@@ -78,8 +78,8 @@ const Footer = () => {
           <div className={classes.wrapper}>
           <Typography variant="body1" color="primary">
           Aqua Bathrooms Direct Ltd
-          11 Bamel Way
-          Gloucester, Gloucestershire GL3 4BH
+          <br />
+          11 Bamel Way, Gloucester, Gloucestershire GL3 4BH
         </Typography>
         <Typography variant="body1" color="primary">
           T: 01452 613221

@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import project1 from './components/assets/project1.png';
 import project2 from './components/assets/project2.png';
 import project3 from './components/assets/project3.png';
+import project1second from './components/assets/project1second.png';
+import project2second from './components/assets/project2second.png';
+import project3second from './components/assets/project3second.png';
 
 const theme = createMuiTheme({
     palette: {
@@ -28,8 +31,13 @@ const theme = createMuiTheme({
         },
       h5: {
         fontWeight: 100,
-        fontSize: "medium",
+        fontSize: "large",
         lineHeight: '1.25rem',
+        padding: "6px"
+      },
+      h6: {
+        fontWeight: 600,
+        padding: "6px"
       },
     },
   });
@@ -50,14 +58,17 @@ const theme = createMuiTheme({
       display: "flex", 
       justifyContent: "center",
       alignItems: "center",
-      flexWrap: "wrap", 
+      flexWrap: "wrap",
+      ['@media (max-width:780px)']: { 
+        flexDirection: "column"
+       } 
     },
     projectContainer:{
       boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
       margin: "10px;"
     },
     projectImage:{
-      width: "250px",
+      width: "300px",
       margin: "10px;"
     }
   })
@@ -67,19 +78,22 @@ const theme = createMuiTheme({
         {
             title: "Brushed Brass",
             image: project1,
-            copy: "Brushed brass is really popular at the moment, we're being asked by more customers to use this every week. We think it looks great here!",
+            secondImage: project1second,
+            copy: "Brushed brass is really popular at the moment. We think this is going to look great!",
             id: 0
         },
         {
             title: "CAD Wetroom",
             image: project2,
+            secondImage: project2second,
             copy: "We recently drew this up for one of our customers. Can't wait to see what it looks like!",
             id: 1
         },
         {
-            title: "Stand out from the crowd",
+            title: "Black Out Features",
             image: project3,
-            copy: "Great use of black taps and showers to create an ultra modern feel in this family bathroom.",
+            secondImage: project3second,
+            copy: "Stand out from the crowd! Great use of black taps and showers to create an ultra modern feel in this family bathroom.",
             id: 2
         },
     ]);
@@ -97,14 +111,17 @@ const theme = createMuiTheme({
               <div className={classes.littleSpace}>
               {projectList.map(project => {
                   return (
-                    <div className={classes.projectContainer}>
+                    <div key={project.id} className={classes.projectContainer}>
                         <Typography variant="h6" color="primary">
                         {project.title}
                         </Typography>
                         <Typography variant="h5" color="primary">
                         {project.copy}
                         </Typography>
-                        <img src={project.image} alt={project.title} className={classes.projectImage}/>
+                        <div className={classes.grid}>
+                          <img src={project.image} alt={project.title} className={classes.projectImage}/>
+                          <img src={project.secondImage} alt="Secondary" className={classes.projectImage}/>
+                        </div>
                     </div>)
               })}
               </div>

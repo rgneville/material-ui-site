@@ -1,6 +1,7 @@
 import React from 'react';
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -25,7 +26,7 @@ const theme = createMuiTheme({
         },
       h5: {
         fontWeight: 100,
-        fontSize: "medium",
+        fontSize: "large",
         lineHeight: '1.5rem',
       },
     },
@@ -55,6 +56,19 @@ const theme = createMuiTheme({
       },
   })
 
+  const Map = () => {
+    return (
+      <GoogleMap 
+        defaultZoom={15} 
+        defaultCenter={{ lat: 51.841547, lng: -2.165404 }} 
+      >
+        <Marker position={{ lat: 51.841547, lng: -2.165404 }} />
+      </GoogleMap>
+    )
+  }
+
+  const WrappedMap = withScriptjs(withGoogleMap(Map));
+
   const Contact = () => {
     const classes = styles();
 
@@ -69,7 +83,7 @@ const theme = createMuiTheme({
             </div>
             <div className={classes.wrapper}>
               <Typography variant="h5" className={classes.littleSpace} color="primary">
-                Thank you for taking the time to visit our website and we hope that we can be of service to you.  Should you have any questions or queries or would like some further information then please use the contact form below and one of our dedicated team will get back in contact with you ASAP.
+                Thank you for taking the time to visit our website and we hope that we can be of service to you.  Should you have any questions or queries or would like some further information then <b>please use the "Get A Quote Today" button above</b> and one of our dedicated team will get back in contact with you ASAP.
               </Typography>
               <Typography variant="h4" className={classes.littleSpace} color="primary">
                  Opening Hours
@@ -81,17 +95,25 @@ const theme = createMuiTheme({
                 <br />
                 Sunday                   CLOSED
               </Typography>
-              <Typography variant="h5" className={classes.littleSpace} color="primary">
-                Aqua Bathrooms Direct Ltd
-                11 Bamel Way
-                Gloucester, Gloucestershire GL3 4BH
-              </Typography>
-              <Typography variant="h5" color="primary">
+              <Typography variant="h6" className={classes.littleSpace} color="primary">
                 T: 01452 613221
               </Typography>
-              <Typography variant="h5" color="primary">
+              <Typography variant="h6" color="primary">
                 E: aquabathroomsdirectltd@gmail.com
               </Typography>
+              <Typography variant="h5" className={classes.littleSpace} color="primary">
+                Aqua Bathrooms Direct Ltd
+                <br />
+                11 Bamel Way, Gloucester, Gloucestershire GL3 4BH
+              </Typography>
+              <div style={{ width: "64vw", height: "50vh", marginTop: "2.5rem" }}>
+                <WrappedMap 
+                  googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+                  loadingElement={<div style={{ height: `100%` }}/>}
+                  containerElement={<div style={{ height: `100%` }}/>}
+                  mapElement={<div style={{ height: `100%` }}/>}
+                />
+              </div>
               </div>
             <div className={classes.bigSpace}>
             <Footer />
