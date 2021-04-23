@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/material-ui-site/static/js/main.0695166f.chunk.js",
+    "main.js.map": "/material-ui-site/static/js/main.0695166f.chunk.js.map",
+    "runtime-main.js": "/material-ui-site/static/js/runtime-main.a4ae56e4.js",
+    "runtime-main.js.map": "/material-ui-site/static/js/runtime-main.a4ae56e4.js.map",
+    "static/js/2.cdcda280.chunk.js": "/material-ui-site/static/js/2.cdcda280.chunk.js",
+    "static/js/2.cdcda280.chunk.js.map": "/material-ui-site/static/js/2.cdcda280.chunk.js.map",
+    "index.html": "/material-ui-site/index.html",
+    "static/js/2.cdcda280.chunk.js.LICENSE.txt": "/material-ui-site/static/js/2.cdcda280.chunk.js.LICENSE.txt",
+    "static/media/ABlogo.ebc8c4a0.svg": "/material-ui-site/static/media/ABlogo.ebc8c4a0.svg",
+    "static/media/bristan.64841354.jpg": "/material-ui-site/static/media/bristan.64841354.jpg",
+    "static/media/eastbrook.cdd5c749.jpg": "/material-ui-site/static/media/eastbrook.cdd5c749.jpg",
+    "static/media/hero.15499e82.png": "/material-ui-site/static/media/hero.15499e82.png",
+    "static/media/project1.a8140dc2.png": "/material-ui-site/static/media/project1.a8140dc2.png",
+    "static/media/project1second.452f69c7.png": "/material-ui-site/static/media/project1second.452f69c7.png",
+    "static/media/project2.9f2fbb8e.png": "/material-ui-site/static/media/project2.9f2fbb8e.png",
+    "static/media/project2second.f4e47e35.png": "/material-ui-site/static/media/project2second.f4e47e35.png",
+    "static/media/project3.f1f961e3.png": "/material-ui-site/static/media/project3.f1f961e3.png",
+    "static/media/project3second.7f83e43b.png": "/material-ui-site/static/media/project3second.7f83e43b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4ae56e4.js",
+    "static/js/2.cdcda280.chunk.js",
+    "static/js/main.0695166f.chunk.js"
+  ]
+}
