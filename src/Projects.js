@@ -106,7 +106,7 @@ const theme = createMuiTheme({
             <NavBar />
             <div className={classes.wrapper}>
               <Typography variant="h4" className={classes.littleSpace} color="primary">
-                 Recent projects
+                 Recent Projects
               </Typography>
               <div className={classes.littleSpace}>
               {projectList.map(project => {

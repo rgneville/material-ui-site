@@ -26,7 +26,7 @@ const theme = createMuiTheme({
     ],
     h4: {
       fontWeight: 600,
-      fontSize: 35,
+      fontSize: 45,
       lineHeight: '2rem',
       },
     h5: {
@@ -42,11 +42,28 @@ const styles = makeStyles({
     margin: "auto",
     textAlign: "center"
   },
+  ['@media (max-width:905px)']: { 
+    fontSize: "25",    },
+  imageContainer: {
+    marginTop: "1.5rem",
+    width: "100%",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto"
+  },
   bigSpace: {
     marginTop: "5rem"
   },
   littleSpace:{
     marginTop: "2.5rem",
+  },
+  overlay:{
+    marginTop: "2.5rem",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -370%)",
+    color: "white"
   },
   grid:{
     display: "flex", 
@@ -60,7 +77,6 @@ const styles = makeStyles({
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    filter: "grayscale(50%)",
     objectFit: "cover",
     objectPosition: "20% 10%"
   },
@@ -73,18 +89,17 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <NavBar />
-        <img src={Hero} alt="Some legs in a bath" className={classes.hero} />
+        <div className={classes.imageContainer}>
+          <img src={Hero} alt="Hero" className={classes.hero} />
+        </div>
         <div className={classes.wrapper}>
-          <Typography variant="h4" className={classes.littleSpace} color="primary">
-             Stylish and Bespoke Bathrooms
-          </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
             High quality bathroom furniture and showers in Gloucester. We stock all the latest designs from the UK's best manufacturers. Come and see our showroom today!
           </Typography>
         </div>
         <div className={`${classes.grid} ${classes.littleSpace}`}>
-          <Grid icon={<BathtubIcon style={{fill: "#4f25f7", height:"125", width:"125"}}/>}  title="Latest Styles" btnTitle="Show me More" link="/projects" />
-          <Grid icon={<BuildIcon style={{fill: "#7460cc", height:"125", width:"125"}}/>} title="Installation" btnTitle="Show me More" link="/about" />
+          <Grid icon={<BathtubIcon style={{fill: "#7050f2", height:"125", width:"125"}}/>}  title="Latest Styles" btnTitle="Show me More" link="/projects" />
+          <Grid icon={<BuildIcon style={{fill: "#8375bf", height:"125", width:"125"}}/>} title="Installation" btnTitle="Show me More" link="/about" />
           <Grid icon={<LocalShippingIcon style={{fill: "#645f78", height:"125", width:"125"}}/>}  title="Local Delivery" btnTitle="Show me More" link="/about" />
           <Grid icon={<ComputerIcon style={{fill: "#4b4954", height:"125", width:"125"}}/>}  title="CAD Designed" btnTitle="Show me More" link="/projects"/>
         </div>

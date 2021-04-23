@@ -30,7 +30,7 @@ const styles = makeStyles({
         "&:hover": {
             color:  "#4f25c8"
         },
-        ['@media (max-width:780px)']: { 
+        '@media (max-width:780px)': { 
             paddingBottom: "1rem"    }
     }
 })

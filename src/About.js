@@ -4,6 +4,12 @@ import { Typography } from '@material-ui/core';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
+import alliance from './components/assets/alliance.jpg';
+import bristan from './components/assets/bristan.jpg';
+import eastbrook from './components/assets/eastbrook.jpg';
+import grohe from './components/assets/grohe.jpg';
+import heritage from './components/assets/heritage.jpg';
+
 const theme = createMuiTheme({
     palette: {
       primary: {
@@ -64,7 +70,7 @@ const theme = createMuiTheme({
             <NavBar />
             <div className={classes.wrapper}>
               <Typography variant="h4" className={classes.littleSpace} color="primary">
-                 About us
+                 About Us
               </Typography>
               <div className={classes.littleSpace}></div>
               <ul className={classes.list}>
@@ -92,6 +98,15 @@ const theme = createMuiTheme({
               Contact Aqua Bathrooms Direct Ltd for first-rate bathroom suppliers that offers the secret for a relaxing and indulgent new bathroom.
 
               </Typography>
+              <br />
+              <div className={classes.grid}>
+                <img src={alliance} alt="Alliance logo" style={{ padding: "5px" }} />
+                <img src={bristan} alt="Bristan logo" style={{ padding: "5px" }} />
+                <img src={eastbrook} alt="Eastbrook logo" style={{ padding: "5px" }} />
+                <img src={grohe} alt="Grohe logo" style={{ padding: "5px" }} />
+                <img src={heritage} alt="Heritage logo" style={{ padding: "5px" }} />
+              </div>
+              <br />
               <ul className={classes.list}>
                 <li>We use a large range of suppliers that allows us to get the right product for our customers at the right price</li>
                 <li>We also use a large range of suppliers to help us in keeping up with the latest trends and fashions in the bathroom industry</li>
