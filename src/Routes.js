@@ -7,7 +7,7 @@ import Contact from './Contact';
 
 const Routes = () => {
     return ( 
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/contact" component={Contact} />       
                 <Route exact path="/projects" component={Projects} />
