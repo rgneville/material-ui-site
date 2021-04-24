@@ -98,10 +98,10 @@ function App() {
           </Typography>
         </div>
         <div className={`${classes.grid} ${classes.littleSpace}`}>
-          <Grid icon={<BathtubIcon style={{fill: "#7050f2", height:"125", width:"125"}}/>}  title="Latest Styles" btnTitle="Show me More" link="/projects" />
-          <Grid icon={<BuildIcon style={{fill: "#8375bf", height:"125", width:"125"}}/>} title="Installation" btnTitle="Show me More" link="/about" />
-          <Grid icon={<LocalShippingIcon style={{fill: "#645f78", height:"125", width:"125"}}/>}  title="Local Delivery" btnTitle="Show me More" link="/about" />
-          <Grid icon={<ComputerIcon style={{fill: "#4b4954", height:"125", width:"125"}}/>}  title="CAD Designed" btnTitle="Show me More" link="/projects"/>
+          <Grid icon={<BathtubIcon style={{fill: "#7050f2", height:"125", width:"125"}}/>}  title="Latest Styles" btnTitle="Show me More" link="/material-ui-site/#/projects" />
+          <Grid icon={<BuildIcon style={{fill: "#8375bf", height:"125", width:"125"}}/>} title="Installation" btnTitle="Show me More" link="/material-ui-site/#/about" />
+          <Grid icon={<LocalShippingIcon style={{fill: "#645f78", height:"125", width:"125"}}/>}  title="Local Delivery" btnTitle="Show me More" link="/material-ui-site/#/about" />
+          <Grid icon={<ComputerIcon style={{fill: "#4b4954", height:"125", width:"125"}}/>}  title="CAD Designed" btnTitle="Show me More" link="/material-ui-site/#/projects"/>
         </div>
         <div className={classes.bigSpace}>
         <Footer />

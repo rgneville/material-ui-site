@@ -42,28 +42,28 @@ const NavBar = () => {
                 <div className={classes.branding}>   
                     <img src={logo} alt="Logo" className={classes.logo}/>
                     <Typography variant="h6" className={classes.menuItem}>
-                        <Link href="/" color="inherit" style={{ textDecoration: "none" }}>
+                        <Link href="/material-ui-site/#/" color="inherit" style={{ textDecoration: "none" }}>
                             Aqua Bathrooms Direct Ltd
                         </Link>
                     </Typography>
                 </div>
                 <Typography variant="h6" className={classes.menuItem}>
-                   <Link href="/" color="inherit" style={{ textDecoration: "none" }}>
+                   <Link href="/material-ui-site/#/" color="inherit" style={{ textDecoration: "none" }}>
                         Home
                    </Link>
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                   <Link href="/about" color="inherit" style={{ textDecoration: "none" }}>
+                   <Link href="/material-ui-site/#/about" color="inherit" style={{ textDecoration: "none" }}>
                         About
                    </Link>
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    <Link href="/projects" color="inherit" style={{ textDecoration: "none" }}>
+                    <Link href="/material-ui-site/#/projects" color="inherit" style={{ textDecoration: "none" }}>
                         Projects
                    </Link>
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    <Link href="/contact" color="inherit" style={{ textDecoration: "none" }}>
+                    <Link href="/material-ui-site/#/contact" color="inherit" style={{ textDecoration: "none" }}>
                         Contact
                    </Link> 
                 </Typography>
