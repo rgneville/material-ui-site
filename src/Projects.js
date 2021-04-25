@@ -94,7 +94,7 @@ const theme = createMuiTheme({
             title: "Black Out Features",
             image: project3,
             secondImage: project3second,
-            copy: "Stand out from the crowd! Great use of black taps and showers to create an ultra modern feel in this family bathroom.",
+            copy: "Stand out from the crowd! Great use of black taps and showers to create an ultra modern feel in this bathroom.",
             id: 2
         },
     ]);
