@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/material-ui-site/static/js/main.74684e48.chunk.js",
-    "main.js.map": "/material-ui-site/static/js/main.74684e48.chunk.js.map",
+    "main.js": "/material-ui-site/static/js/main.35b76019.chunk.js",
+    "main.js.map": "/material-ui-site/static/js/main.35b76019.chunk.js.map",
     "runtime-main.js": "/material-ui-site/static/js/runtime-main.a4ae56e4.js",
     "runtime-main.js.map": "/material-ui-site/static/js/runtime-main.a4ae56e4.js.map",
-    "static/js/2.74698a2c.chunk.js": "/material-ui-site/static/js/2.74698a2c.chunk.js",
-    "static/js/2.74698a2c.chunk.js.map": "/material-ui-site/static/js/2.74698a2c.chunk.js.map",
+    "static/js/2.6e9be883.chunk.js": "/material-ui-site/static/js/2.6e9be883.chunk.js",
+    "static/js/2.6e9be883.chunk.js.map": "/material-ui-site/static/js/2.6e9be883.chunk.js.map",
     "index.html": "/material-ui-site/index.html",
-    "static/js/2.74698a2c.chunk.js.LICENSE.txt": "/material-ui-site/static/js/2.74698a2c.chunk.js.LICENSE.txt",
+    "static/js/2.6e9be883.chunk.js.LICENSE.txt": "/material-ui-site/static/js/2.6e9be883.chunk.js.LICENSE.txt",
     "static/media/ABlogo.ebc8c4a0.svg": "/material-ui-site/static/media/ABlogo.ebc8c4a0.svg",
     "static/media/bristan.64841354.jpg": "/material-ui-site/static/media/bristan.64841354.jpg",
     "static/media/eastbrook.cdd5c749.jpg": "/material-ui-site/static/media/eastbrook.cdd5c749.jpg",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a4ae56e4.js",
-    "static/js/2.74698a2c.chunk.js",
-    "static/js/main.74684e48.chunk.js"
+    "static/js/2.6e9be883.chunk.js",
+    "static/js/main.35b76019.chunk.js"
   ]
 }
