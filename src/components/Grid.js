@@ -22,7 +22,7 @@ const Grid = (props) => {
     return (
         <div className={classes.wrapper}>
             <div className={classes.item}>{icon}</div>
-            <Typography className={classes.item} variant="h5">{title}</Typography>
+            <Typography className={classes.item} variant="h6">{title}</Typography>
             <div className={classes.item}>
             <Link href={link} color="inherit">
                 <CustomBtn txt={btnTitle}/>

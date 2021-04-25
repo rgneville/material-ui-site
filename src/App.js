@@ -26,11 +26,15 @@ const theme = createMuiTheme({
     ],
     h4: {
       fontWeight: 600,
-      fontSize: 45,
+      fontSize: 28,
       lineHeight: '2rem',
       },
     h5: {
       fontWeight: 100,
+      lineHeight: '2rem',
+    },
+    h6: {
+      fontWeight: 400,
       lineHeight: '2rem',
     },
   },
@@ -40,10 +44,11 @@ const styles = makeStyles({
   wrapper: {
     width: "65%",
     margin: "auto",
-    textAlign: "center"
-  },
+    textAlign: "center",
   ['@media (max-width:905px)']: { 
-    fontSize: "25",    },
+    fontSize: "25",
+    width: "90%"    }
+  },
   imageContainer: {
     marginTop: "1.5rem",
     width: "100%",

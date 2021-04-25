@@ -12,41 +12,42 @@ import project2second from './components/assets/project2second.png';
 import project3second from './components/assets/project3second.png';
 
 const theme = createMuiTheme({
-    palette: {
-      primary: {
-            main:"#000000",
-          },
-      secondary: {
-        main:"#c7d8ed",
-      },
+  palette: {
+    primary: {
+      main:"#000000",
     },
-    typography: {
-      fontFamily: [
-        'Roboto'
-      ],
-      h4: {
-        fontWeight: 600,
-        fontSize: 28,
-        lineHeight: '2rem',
-        },
-      h5: {
-        fontWeight: 100,
-        fontSize: "large",
-        lineHeight: '1.25rem',
-        padding: "6px"
-      },
-      h6: {
-        fontWeight: 600,
-        padding: "6px"
-      },
+    secondary: {
+      main:"#c7d8ed",
     },
-  });
+  },
+  typography: {
+    fontFamily: [
+      'Roboto'
+    ],
+    h4: {
+      fontWeight: 600,
+      fontSize: 28,
+      lineHeight: '2rem',
+      },
+    h5: {
+      fontWeight: 100,
+      lineHeight: '2rem',
+    },
+    h6: {
+      fontWeight: 400,
+      lineHeight: '2rem',
+    },
+  },
+});
 
   const styles = makeStyles({
     wrapper: {
       width: "65%",
       margin: "auto",
-      textAlign: "center"
+      textAlign: "center",
+    ['@media (max-width:905px)']: { 
+      fontSize: "25",
+      width: "90%"    }
     },
     bigSpace: {
       marginTop: "5rem"
@@ -112,10 +113,10 @@ const theme = createMuiTheme({
               {projectList.map(project => {
                   return (
                     <div key={project.id} className={classes.projectContainer}>
-                        <Typography variant="h6" color="primary">
+                        <Typography variant="h5" color="primary">
                         {project.title}
                         </Typography>
-                        <Typography variant="h5" color="primary">
+                        <Typography variant="body1" color="primary" style={{ padding: "8px" }}>
                         {project.copy}
                         </Typography>
                         <div className={classes.grid}>

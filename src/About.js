@@ -9,38 +9,45 @@ import bristan from './components/assets/bristan.jpg';
 import eastbrook from './components/assets/eastbrook.jpg';
 import grohe from './components/assets/grohe.jpg';
 import heritage from './components/assets/heritage.jpg';
+import tavistock from './components/assets/tavistock.jpg';
 
 const theme = createMuiTheme({
-    palette: {
-      primary: {
-        main:"#000000",
-      },
-      secondary: {
-        main:"#c7d8ed",
-      },
+  palette: {
+    primary: {
+      main:"#000000",
     },
-    typography: {
-      fontFamily: [
-        'Roboto'
-      ],
-      h4: {
-        fontWeight: 600,
-        fontSize: 28,
-        lineHeight: '2rem',
-        },
-      h5: {
-        fontWeight: 100,
-        fontSize: "large",
-        lineHeight: '2rem',
-      },
+    secondary: {
+      main:"#c7d8ed",
     },
-  });
+  },
+  typography: {
+    fontFamily: [
+      'Roboto'
+    ],
+    h4: {
+      fontWeight: 600,
+      fontSize: 28,
+      lineHeight: '2rem',
+      },
+    h5: {
+      fontWeight: 100,
+      lineHeight: '2rem',
+    },
+    h6: {
+      fontWeight: 400,
+      lineHeight: '2rem',
+    },
+  },
+});
 
   const styles = makeStyles({
     wrapper: {
       width: "65%",
       margin: "auto",
-      textAlign: "center"
+      textAlign: "center",
+    ['@media (max-width:905px)']: { 
+      fontSize: "25",
+      width: "90%"    }
     },
     bigSpace: {
       marginTop: "5rem"
@@ -105,6 +112,7 @@ const theme = createMuiTheme({
                 <img src={eastbrook} alt="Eastbrook logo" style={{ padding: "5px" }} />
                 <img src={grohe} alt="Grohe logo" style={{ padding: "5px" }} />
                 <img src={heritage} alt="Heritage logo" style={{ padding: "5px" }} />
+                <img src={tavistock} alt="Tavistock logo" style={{ padding: "5px" }} />
               </div>
               <br />
               <ul className={classes.list}>

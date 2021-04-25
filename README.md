@@ -1,31 +1,51 @@
+# Material UI Brochure Site
+
+A website I've built for a local bathroom firm, constructed with create-react-app - featuring Google Maps API, Hooks, Router and custom styled components from the Materialize library.
+
+## Lessons Learned
+
+My first Material UI project, really enjoyed the process of learning to use a component library. Really enjoyed learning how to customise these default elements.
+
+Had to learn a lot about how react-router works! BroswerRouter wasn't working, after a long StackOverflow dive I decided to switch to HashRouter and change all the hrefs of the links to adapt to the HashRouter routing.
+
 ## Potential Future Features
 
-A specialised enquiry form that helps Aqua Bathrooms get better information about a customer upfront, improving their service and helping the customers get some inspiration
+- A specialised enquiry form that helps Aqua Bathrooms get better information about a customer upfront, improving their service and helping the customers get some inspiration
 
-Making each project section a "CAD drawing vs final bathroom" section, with an expandable gallery of photos when you click on the project
+- Making each entry in the Projects gallery a "CAD drawing vs final bathroom" section, with an expandable gallery of photos when you click on the project. Could also include some basic info on the bathroom furniture displayed so that customers can specifically ask for the furniture displayed?
 
-Adding an API key to the Google Maps section
+- Adding an API key to the Google Maps section to remove the "dev only" overlay
 
-# Getting Started with Create React App
+## Deployment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed with [github pages](https://pages.github.com/).
 
-## Available Scripts
+## Get started
 
-In the project directory, you can run:
+From your command line, first clone this repo:
 
-### `yarn start`
+```bash
+# Clone this repository
+$ git clone https://github.com/rgneville/material-ui-site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Go into the repository
+$ cd material-ui-site
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Remove current origin repository
+$ git remote remove origin
+```
+Then you can install the dependencies using NPM:
 
-### `yarn test`
+Using NPM:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm start
+```
+You should now have a development server running in your default browser.
 
 ### `yarn build`
 
@@ -36,13 +56,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.

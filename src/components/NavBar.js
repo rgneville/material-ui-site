@@ -19,10 +19,13 @@ const styles = makeStyles({
         fill: "#4f25f7"
     },
     branding: {
-        width: "40%",
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center"
+        alignItems: "center",
+        ['@media (max-width:630px)']: { 
+            fontSize: "16px",
+            width: "90%"
+           }
     },
     menuItem: {
         cursor: "pointer", 
@@ -32,7 +35,12 @@ const styles = makeStyles({
         },
         '@media (max-width:780px)': { 
             paddingBottom: "1rem"    }
-    }
+    },
+    navButton: {
+        ['@media (max-width:800px)']: { 
+            display: "none"
+           }
+    },
 })
 
 const NavBar = () => {
@@ -42,16 +50,11 @@ const NavBar = () => {
                 <div className={classes.branding}>   
                     <img src={logo} alt="Logo" className={classes.logo}/>
                     <Typography variant="h6" className={classes.menuItem}>
-                        <Link href="/material-ui-site/#/" color="inherit" style={{ textDecoration: "none" }}>
+                        <Link href="/material-ui-site/#/" color="inherit" style={{ textDecoration: "none", marginRight: "120px" }} className={classes.branding}>
                             Aqua Bathrooms Direct Ltd
                         </Link>
                     </Typography>
                 </div>
-                <Typography variant="h6" className={classes.menuItem}>
-                   <Link href="/material-ui-site/#/" color="inherit" style={{ textDecoration: "none" }}>
-                        Home
-                   </Link>
-                </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
                    <Link href="/material-ui-site/#/about" color="inherit" style={{ textDecoration: "none" }}>
                         About
@@ -67,7 +70,7 @@ const NavBar = () => {
                         Contact
                    </Link> 
                 </Typography>
-                <Link href="mailto:aquabathroomsdirectltd@gmail.com" color="inherit">
+                <Link href="mailto:aquabathroomsdirectltd@gmail.com" color="inherit" className={classes.navButton}>
                     <CustomBtn txt="Get a quote today"/>
                 </Link>
             </Toolbar>
